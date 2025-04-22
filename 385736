@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulgas Barber Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Benvindo à Pulgas Barber Shop</h1>
+    <p>Transformamos estilo em confiança!</p>
+  </header>
+
+  <section class="gallery">
+    <h2>Amostras de Corte</h2>
+    <div class="samples">
+      <img src="https://via.placeholder.com/150" alt="Corte 1">
+      <img src="https://via.placeholder.com/150" alt="Corte 2">
+      <img src="https://via.placeholder.com/150" alt="Corte 3">
+    </div>
+  </section>
+
+  <section class="prices">
+    <h2>Tabela de Preços</h2>
+    <ul>
+      <li>Adultos - Corte Simples: 100MT</li>
+      <li>Adultos - Corte Completo: 200MT</li>
+      <li>Crianças - Corte Simples: 75MT</li>
+      <li>Crianças - Corte Completo: 150MT</li>
+    </ul>
+  </section>
+
+  <section class="register">
+    <h2>Faça o seu cadastro</h2>
+    <form>
+      <input type="text" placeholder="Nome Completo" required>
+      <input type="tel" placeholder="Telefone" required>
+      <input type="email" placeholder="E-mail" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <section class="booking">
+    <h2>Agende seu corte</h2>
+    <p>Pagamento via Mpesa, Emola ou Cartão Visa</p>
+  </section>
+
+  <section class="comments">
+    <h2>Comentários dos Clientes</h2>
+    <textarea placeholder="Deixe seu comentário..."></textarea>
+    <button>Enviar</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pulgas Barber Shop</p>
+  </footer>
+
+  <!-- Firebase -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBEinjKGGNZUG_f2JIak4SWrvpwCpow2h8",
+      authDomain: "pulgas-barber-shop.firebaseapp.com",
+      projectId: "pulgas-barber-shop",
+      storageBucket: "pulgas-barber-shop.appspot.com",
+      messagingSenderId: "292161699491",
+      appId: "1:292161699491:web:7454dd2c882f8926d2c916",
+      measurementId: "G-4LF17GBRMG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
+
